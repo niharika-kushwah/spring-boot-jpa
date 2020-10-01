@@ -115,6 +115,13 @@ public class EmpController {
 			return "deleted";
 			
 		}
+	
+	
+	        @RequestMapping(value="/get/list",method = RequestMethod.Get)
+	        @ResponseBody
+	        public List<Employee> getAllEmployees(){
+			return this.getEmp();
+		}
 		
 		
 		
